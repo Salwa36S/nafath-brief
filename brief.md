@@ -25,9 +25,21 @@ Resource: Build an offline-first app - https://developer.android.com/topic/archi
 
 ## Networking
 
+5G network slicing divides shared 5G infrastructure into separate logical networks, each built for different needs. 3GPP defines three slice types: eMBB for high bandwidth, uRLLC for low latency and reliability, and mMTC for many small sensors. For responders, one slice could carry group voice and video, another could control drones, and another could collect sensor data. A slice manager can reassign resources during an incident, and the core network can be kept separate when isolation matters.
+
+Resource: Conceptual Evaluation of a 5G Network Slicing Technique for Emergency Communications and Preliminary Estimate of Energy Trade-Off - https://www.mdpi.com/1996-1073/14/21/6876
+
 ## Cybersecurity
 
+NIST SP 800-61 Rev. 3 links incident response to the six CSF 2.0 functions. Before an attack, the govern, identify and protect functions prepare the service. When an attack happens, detect confirms the suspicious activity, respond contains it and limits harm to responders, and recover restores normal service. Afterwards, lessons learned improve the plans. Rev. 3 replaces the older four-phase model in Rev. 2.
+
+Resource: Incident Response Recommendations and Considerations for Cybersecurity Risk Management: A CSF 2.0 Community Profile - https://csrc.nist.gov/pubs/sp/800/61/r3/final
+
 ## Data
+
+A star schema has one central fact table, such as service usage records, linked directly to dimension tables like date and region. A snowflake schema splits a dimension into several normalized tables, for example region into country and city, which saves repeated data but needs more joins. For daily usage reports per region, a star schema fits better because each report needs only the fact table plus the date and region dimensions.
+
+Resource: Understand star schema and the importance for Power BI - https://learn.microsoft.com/power-bi/guidance/star-schema
 
 ## Misconception in My Track
 
