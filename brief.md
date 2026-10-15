@@ -43,4 +43,8 @@ Resource: Understand star schema and the importance for Power BI - https://learn
 
 ## Misconception in My Track
 
+A common wrong belief is that a model with very high accuracy on its training data is a good model. The correct version is that high training accuracy can mean overfitting: the model learned noise as well as signal and may perform poorly on new data. A reliable model should perform similarly on unseen test data, which cross-validation measures. This is supported by section 4.1, The Problem of Overfitting and Underfitting, in the Springer chapter.
+
 ## Open Question
+
+Would time-based cross-validation, which trains on earlier periods and tests on later ones, give a more realistic estimate for congestion data than random k-fold? I would test both on real network traffic data.
